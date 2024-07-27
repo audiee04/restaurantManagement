@@ -134,7 +134,7 @@ app.get('/api/orders/queue', async (req, res) => {
 app.use(express.static(path.join(__dirname, '/build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/build/index.html'));
+  res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
 const port = process.env.PORT || 5000;
